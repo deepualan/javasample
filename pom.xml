@@ -129,7 +129,7 @@
             <dependency>
                 <groupId>fish.payara.arquillian</groupId>
                 <artifactId>payara-client-ee7</artifactId>
-                <version>2.2</version>
+                <version>2.3.1</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
@@ -1456,11 +1456,7 @@
                                              PR for Liberty arquillian container to modify server.xml?
                                          -->
                                         <echo>Copying server.xml</echo>
-                                        <copy
-                                            failonerror="false"
-                                            file="../../test-utils/src/main/resources/server.xml"
-                                            tofile="${project.build.directory}/wlp/templates/servers/defaultServer/server.xml"
-                                        />
+                                        <copy failonerror="false" file="../../test-utils/src/main/resources/server.xml" tofile="${project.build.directory}/wlp/templates/servers/defaultServer/server.xml"/>
                                     </tasks>
                                 </configuration>
                             </execution>
@@ -1660,11 +1656,7 @@
                                 <configuration>
                                     <tasks>
                                         <echo>Copying server.xml</echo>
-                                        <copy
-                                            failonerror="false"
-                                            file="../../test-utils/src/main/resources/tomcat-users.xml"
-                                            tofile="${project.build.directory}/apache-tomcat-${tomcat.version}/conf/tomcat-users.xml"
-                                        />
+                                        <copy failonerror="false" file="../../test-utils/src/main/resources/tomcat-users.xml" tofile="${project.build.directory}/apache-tomcat-${tomcat.version}/conf/tomcat-users.xml"/>
                                     </tasks>
                                 </configuration>
                             </execution>
