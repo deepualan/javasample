@@ -140,7 +140,7 @@
             <dependency>
                 <groupId>org.bouncycastle</groupId>
                 <artifactId>bcpkix-jdk15on</artifactId>
-                <version>1.61</version>
+                <version>1.66</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -1456,11 +1456,7 @@
                                              PR for Liberty arquillian container to modify server.xml?
                                          -->
                                         <echo>Copying server.xml</echo>
-                                        <copy
-                                            failonerror="false"
-                                            file="../../test-utils/src/main/resources/server.xml"
-                                            tofile="${project.build.directory}/wlp/templates/servers/defaultServer/server.xml"
-                                        />
+                                        <copy failonerror="false" file="../../test-utils/src/main/resources/server.xml" tofile="${project.build.directory}/wlp/templates/servers/defaultServer/server.xml"/>
                                     </tasks>
                                 </configuration>
                             </execution>
@@ -1660,11 +1656,7 @@
                                 <configuration>
                                     <tasks>
                                         <echo>Copying server.xml</echo>
-                                        <copy
-                                            failonerror="false"
-                                            file="../../test-utils/src/main/resources/tomcat-users.xml"
-                                            tofile="${project.build.directory}/apache-tomcat-${tomcat.version}/conf/tomcat-users.xml"
-                                        />
+                                        <copy failonerror="false" file="../../test-utils/src/main/resources/tomcat-users.xml" tofile="${project.build.directory}/apache-tomcat-${tomcat.version}/conf/tomcat-users.xml"/>
                                     </tasks>
                                 </configuration>
                             </execution>
